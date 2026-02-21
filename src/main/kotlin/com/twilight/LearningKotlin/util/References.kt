@@ -24,4 +24,7 @@ fun main(){
     val instance = constref("Trups")
     instance.printName()
 
+    val refs = List(5){ ::References }
+    refs.forEach { it("Test1").printName() }
+
 }
